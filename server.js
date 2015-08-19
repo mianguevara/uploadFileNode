@@ -2,7 +2,7 @@
 	app=express(),
  	bodyParser = require('body-parser'); 
 	var multer = require("multer");
-	server=require('http').createServer(app),
+	//server=require('http').createServer(app),
 	path = require("path");
 	app.set('view engine','jade');
 	app.use(express.static('./public'));
@@ -53,4 +53,4 @@
 	});
 
 
-	server.listen(3000);
+	app.listen(3000);
